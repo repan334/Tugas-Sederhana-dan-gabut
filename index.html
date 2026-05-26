@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laporth - Laporan Keuangan UMKM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <span class="logo-text">Laporin</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#cara-kerja">Cara Kerja</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#harga">Harga</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-login">Masuk</a>
+        <a href="#" class="btn-register">Daftar Gratis</a>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          <span>Dipercaya 600+ UMKM Indonesia</span>
+        </div>
+        <h1 class="hero-title">
+          Laporan Keuangan UMKM,
+          <span class="highlight">Selesai dalam 1 Foto</span>
+        </h1>
+        <p class="hero-desc">
+          Cukup foto struk atau nota, Laporth otomatis mencatat dan membuat laporan keuangan lengkap untuk usahamu. Mudah, cepat, dan akurat.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">600+</span>
+            <span class="stat-label">Pengguna Aktif</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Rating Pengguna</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">99%</span>
+            <span class="stat-label">Akurasi Data</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#" class="btn-primary">
+            <i class="fas fa-rocket"></i>
+            Coba Gratis Sekarang
+          </a>
+          <a href="#" class="btn-secondary">
+            <i class="fas fa-play-circle"></i>
+            Lihat Demo
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="phone-mockup-wrapper">
+          <div class="phone-glow"></div>
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-header">
+                <div class="phone-status">
+                  <span>9:41</span>
+                  <div class="phone-icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+                  </div>
+                </div>
+                <div class="phone-app-header">
+                  <span class="app-title">Dashboard</span>
+                  <div class="app-avatar"></div>
+                </div>
+              </div>
+              <div class="phone-content">
+                <div class="phone-card balance-card">
+                  <span class="card-label">Total Pendapatan</span>
+                  <span class="card-amount">Rp 12.450.000</span>
+                  <div class="card-trend up">
+                    <i class="fas fa-arrow-up"></i> +12.5%
+                  </div>
+                </div>
+                <div class="phone-chart">
+                  <div class="chart-bar" style="height:40%"></div>
+                  <div class="chart-bar" style="height:65%"></div>
+                  <div class="chart-bar" style="height:50%"></div>
+                  <div class="chart-bar active" style="height:85%"></div>
+                  <div class="chart-bar" style="height:70%"></div>
+                  <div class="chart-bar" style="height:90%"></div>
+                  <div class="chart-bar" style="height:75%"></div>
+                </div>
+                <div class="phone-transactions">
+                  <div class="txn-item">
+                    <div class="txn-icon green"><i class="fas fa-arrow-down"></i></div>
+                    <div class="txn-info">
+                      <span>Penjualan Kopi</span>
+                      <span class="txn-date">Hari ini</span>
+                    </div>
+                    <span class="txn-amount green">+Rp 150.000</span>
+                  </div>
+                  <div class="txn-item">
+                    <div class="txn-icon red"><i class="fas fa-arrow-up"></i></div>
+                    <div class="txn-info">
+                      <span>Beli Bahan Baku</span>
+                      <span class="txn-date">Kemarin</span>
+                    </div>
+                    <span class="txn-amount red">-Rp 80.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating cards -->
+          <div class="float-card float-card-1">
+            <i class="fas fa-camera"></i>
+            <span>Foto Struk</span>
+          </div>
+          <div class="float-card float-card-2">
+            <i class="fas fa-check-circle"></i>
+            <span>Tercatat Otomatis!</span>
+          </div>
+          <div class="float-card float-card-3">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Laporan Siap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="trusted">
+    <div class="trusted-container">
+      <p class="trusted-label">Dipercaya oleh berbagai jenis UMKM</p>
+      <div class="trusted-logos">
+        <div class="trust-item"><i ></i><span>Bu Asih Mart</span></div>
+        <div class="trust-item"><i ></i><span>Skansaba DIgi</span></div>
+        <div class="trust-item"><i ></i><span>Dico Coffe</span></div>
+        <div class="trust-item"><i ></i><span>Sayur Bu Sri</span></div>
+        <div class="trust-item"><i ></i><span>Toko dan Jajan Pasar Bunda Rohim</span></div>
+        <div class="trust-item"><i ></i><span>Spunda It Technology</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR SECTION -->
+  <section class="fitur" id="fitur">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Fitur Unggulan</span>
+        <h2>Fitur Unggulan untuk UMKM</h2>
+        <p>Semua yang kamu butuhkan untuk mengelola keuangan usaha dalam satu aplikasi</p>
+      </div>
+      <div class="fitur-grid">
+        <div class="fitur-card" data-aos="flip-left" data-aos-delay="0">
+          <div class="fitur-icon green">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Scan Struk Otomatis</h3>
+          <p>Foto struk atau nota, AI kami langsung membaca dan mencatat transaksi secara otomatis tanpa input manual.</p>
+          <div class="fitur-tag">AI Powered</div>
+        </div>
+        <div class="fitur-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="fitur-icon blue">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Laporan Real-time</h3>
+          <p>Pantau arus kas, laba rugi, dan neraca keuangan usahamu kapan saja dan di mana saja secara real-time.</p>
+          <div class="fitur-tag">Live Update</div>
+        </div>
+        <div class="fitur-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="fitur-icon orange">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <h3>Export Laporan PDF</h3>
+          <p>Ekspor laporan keuangan dalam format PDF atau Excel yang siap dibagikan ke investor atau bank.</p>
+          <div class="fitur-tag">Multi Format</div>
+        </div>
+        <div class="fitur-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="fitur-icon purple">
+            <i class="fas fa-bell"></i>
+          </div>
+          <h3>Notifikasi Pintar</h3>
+          <p>Dapatkan pengingat tagihan, laporan mingguan, dan alert ketika pengeluaran melebihi batas yang ditentukan.</p>
+          <div class="fitur-tag">Smart Alert</div>
+        </div>
+        <div class="fitur-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="fitur-icon teal">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Keamanan Data</h3>
+          <p>Data keuanganmu dienkripsi dengan standar bank. Aman, terlindungi, dan hanya bisa diakses olehmu.</p>
+          <div class="fitur-tag">Bank-level Security</div>
+        </div>
+        <div class="fitur-card" data-aos="flip-left" data-aos-delay="500">
+          <div class="fitur-icon pink">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Multi Pengguna</h3>
+          <p>Tambahkan kasir atau akuntan dengan akses terbatas. Kelola tim keuanganmu dengan mudah.</p>
+          <div class="fitur-tag">Team Ready</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARA KERJA -->
+  <section class="cara-kerja" id="cara-kerja">
+    <div class="section-container">
+      <div class="ck-wrapper">
+        <div class="ck-visual" data-aos="fade-right">
+          <div class="ck-phone-wrapper">
+            <div class="ck-phone">
+              <div class="ck-screen">
+                <div class="ck-screen-header">
+                  <div class="ck-dot red"></div>
+                  <div class="ck-dot yellow"></div>
+                  <div class="ck-dot green"></div>
+                </div>
+                <div class="ck-screen-content">
+                  <div class="ck-step-visual active" id="step-visual-1">
+                    <div class="step-icon-big"><i class="fas fa-camera"></i></div>
+                    <p>Arahkan kamera ke struk...</p>
+                    <div class="scan-line"></div>
+                  </div>
+                  <div class="ck-step-visual" id="step-visual-2">
+                    <div class="step-icon-big"><i class="fas fa-magic"></i></div>
+                    <p>AI memproses data...</p>
+                    <div class="processing-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <div class="ck-step-visual" id="step-visual-3">
+                    <div class="step-icon-big green"><i class="fas fa-check-circle"></i></div>
+                    <p>Laporan tersimpan!</p>
+                    <div class="success-ring"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ck-content" data-aos="fade-left">
+          <span class="section-badge">Cara Kerja</span>
+          <h2>Mulai dalam 3 Langkah Mudah</h2>
+          <div class="steps">
+            <div class="step-item active" data-step="1">
+              <div class="step-num">1</div>
+              <div class="step-text">
+                <h4>Foto Struk</h4>
+                <p>Ambil foto struk, nota, atau bukti transaksi menggunakan kamera HP kamu.</p>
+              </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item" data-step="2">
+              <div class="step-num">2</div>
+              <div class="step-text">
+                <h4>AI Memproses</h4>
+                <p>Teknologi AI kami membaca dan mengekstrak data transaksi secara otomatis dan akurat.</p>
+              </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item" data-step="3">
+              <div class="step-num">3</div>
+              <div class="step-text">
+                <h4>Lihat Laporan</h4>
+                <p>Laporan keuangan lengkap langsung tersedia. Ekspor kapan saja sesuai kebutuhan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="testimoni" id="testimoni">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Testimoni</span>
+        <h2>Kata Mereka Tentang Laporth</h2>
+        <p>Ribuan pemilik UMKM sudah merasakan manfaatnya</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Dulu saya catat keuangan di buku, sekarang cukup foto struk. Laporan bulanan langsung jadi! Sangat membantu usaha kafe saya."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg, #22c55e, #16a34a);">BT</div>
+            <div>
+              <strong>Budi Santoso</strong>
+              <span>Pemilik Kafe Nusantara</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card featured" data-aos="fade-up" data-aos-delay="150">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Laporth benar-benar mengubah cara saya mengelola keuangan toko. Sekarang saya bisa fokus jualan, laporan sudah otomatis!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">AR</div>
+            <div>
+              <strong>Ani Rahayu</strong>
+              <span>Pemilik Toko Batik</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Aplikasi yang simpel tapi powerful. Saya bisa lihat laporan laba rugi kapan saja. Sangat recommended untuk UMKM!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">DW</div>
+            <div>
+              <strong>Dian Wijaya</strong>
+              <span>Pemilik Warung Makan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARGA -->
+  <section class="harga" id="harga">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Harga</span>
+        <h2>Pilih Paket Sesuai Usahamu</h2>
+        <div class="toggle-billing">
+          <span class="toggle-label active" id="toggle-monthly">Bulanan</span>
+          <div class="toggle-switch" id="billing-toggle">
+            <div class="toggle-thumb"></div>
+          </div>
+          <span class="toggle-label" id="toggle-yearly">Tahunan <span class="save-badge">Hemat 20%</span></span>
+        </div>
+      </div>
+      <div class="harga-grid">
+        <div class="harga-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="harga-header">
+            <h3>Gratis</h3>
+            <p>Untuk memulai</p>
+          </div>
+          <div class="harga-price">
+            <span class="price-amount">Rp 0</span>
+            <span class="price-period">/bulan</span>
+          </div>
+          <ul class="harga-features">
+            <li><i class="fas fa-check"></i> 50 transaksi/bulan</li>
+            <li><i class="fas fa-check"></i> 1 pengguna</li>
+            <li><i class="fas fa-check"></i> Laporan dasar</li>
+            <li class="disabled"><i class="fas fa-times"></i> Export PDF</li>
+            <li class="disabled"><i class="fas fa-times"></i> Multi pengguna</li>
+          </ul>
+          <a href="#" class="btn-harga outline">Mulai Gratis</a>
+        </div>
+        <div class="harga-card popular" data-aos="fade-up" data-aos-delay="150">
+          <div class="popular-badge">Paling Populer</div>
+          <div class="harga-header">
+            <h3>Pro</h3>
+            <p>Untuk usaha berkembang</p>
+          </div>
+          <div class="harga-price">
+            <span class="price-amount" id="pro-price">Rp 49.000</span>
+            <span class="price-period">/bulan</span>
+          </div>
+          <ul class="harga-features">
+            <li><i class="fas fa-check"></i> Transaksi unlimited</li>
+            <li><i class="fas fa-check"></i> 3 pengguna</li>
+            <li><i class="fas fa-check"></i> Laporan lengkap</li>
+            <li><i class="fas fa-check"></i> Export PDF & Excel</li>
+            <li class="disabled"><i class="fas fa-times"></i> API Integration</li>
+          </ul>
+          <a href="#" class="btn-harga primary">Pilih Paket</a>
+        </div>
+        <div class="harga-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="harga-header">
+            <h3>Bisnis</h3>
+            <p>Untuk usaha besar</p>
+          </div>
+          <div class="harga-price">
+            <span class="price-amount" id="bisnis-price">Rp 99.000</span>
+            <span class="price-period">/bulan</span>
+          </div>
+          <ul class="harga-features">
+            <li><i class="fas fa-check"></i> Transaksi unlimited</li>
+            <li><i class="fas fa-check"></i> Pengguna unlimited</li>
+            <li><i class="fas fa-check"></i> Laporan lengkap</li>
+            <li><i class="fas fa-check"></i> Export PDF & Excel</li>
+            <li><i class="fas fa-check"></i> API Integration</li>
+          </ul>
+          <a href="#" class="btn-harga outline">Pilih Paket</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">FAQ</span>
+        <h2>Pertanyaan Umum (FAQ)</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq-question">
+            <span>Apakah Laporth bisa digunakan secara gratis?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ya! Laporth menyediakan paket gratis dengan 50 transaksi per bulan. Kamu bisa mulai menggunakan tanpa kartu kredit dan tanpa batas waktu.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq-question">
+            <span>Apakah data keuangan saya aman?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Keamanan data adalah prioritas utama kami. Semua data dienkripsi dengan standar AES-256 dan disimpan di server yang tersertifikasi ISO 27001.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq-question">
+            <span>Bagaimana cara scan struk dengan Laporth?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Cukup buka aplikasi, tap tombol kamera, arahkan ke struk atau nota, dan foto. AI kami akan otomatis membaca dan mencatat transaksi dalam hitungan detik.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <button class="faq-question">
+            <span>Apakah bisa digunakan di iOS dan Android?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, Laporth tersedia di App Store (iOS) dan Google Play Store (Android). Kamu juga bisa mengaksesnya melalui browser di laptop atau komputer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <div class="cta-shape cta-shape-1"></div>
+      <div class="cta-shape cta-shape-2"></div>
+    </div>
+    <div class="cta-container" data-aos="zoom-in">
+      <div class="cta-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h2>Mulai Kelola Keuangan<br>Usahamu Hari Ini!</h2>
+      <p>Bergabung dengan 600+ UMKM yang sudah mempercayakan keuangan usahanya kepada Laporth</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-cta-primary">
+          <i class="fas fa-rocket"></i>
+          Daftar Sekarang Gratis
+        </a>
+        <a href="#" class="btn-cta-secondary">
+          <i class="fas fa-headset"></i>
+          Hubungi Kami
+        </a>
+      </div>
+      <div class="cta-note">
+        <i class="fas fa-lock"></i>
+        Tidak perlu kartu kredit · Gratis selamanya untuk paket dasar
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon small"><i class="fas fa-chart-line"></i></div>
+          <span>laporth</span>
+        </div>
+        <p>Solusi laporan keuangan digital untuk UMKM Indonesia. Mudah, cepat, dan terpercaya.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produk</h4>
+          <ul>
+            <li><a href="#">Fitur</a></li>
+            <li><a href="#">Harga</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dukungan</h4>
+          <ul>
+            <li><a href="#">Pusat Bantuan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Komunitas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privasi</a></li>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">Cookie</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Laporth. All rights reserved. Made with ❤️ in Indonesia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
